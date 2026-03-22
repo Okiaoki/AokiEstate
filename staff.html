@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタッフ紹介 | Aoki Estate</title>
+  <meta name="description" content="Aoki Estateのスタッフ紹介。地域を知り尽くした経験豊富なスタッフが、お客様の理想の暮らしをサポートします。">
+  <meta name="theme-color" content="#5B7F5E">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="スタッフ紹介 | Aoki Estate">
+  <meta property="og:description" content="Aoki Estateのスタッフ紹介。地域を知り尽くした経験豊富なスタッフが、お客様の理想の暮らしをサポートします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Aoki Estate">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="Aoki Estate" width="220" height="48"></a>
+    <nav class="header__nav">
+      <div class="header__nav-item header__nav-item--dropdown">
+        <a href="#" class="header__nav-link">物件を探す</a>
+        <div class="header__dropdown">
+          <a href="rent.html">賃貸物件</a>
+          <a href="buy.html">売買物件</a>
+        </div>
+      </div>
+      <div class="header__nav-item"><a href="about.html" class="header__nav-link">会社案内</a></div>
+      <div class="header__nav-item"><a href="staff.html" class="header__nav-link">スタッフ</a></div>
+      <div class="header__nav-item"><a href="owner.html" class="header__nav-link">オーナー様へ</a></div>
+      <div class="header__nav-item"><a href="column.html" class="header__nav-link">コラム</a></div>
+      <div class="header__nav-item"><a href="recruit.html" class="header__nav-link">採用情報</a></div>
+      <a href="contact.html" class="btn btn--primary btn--sm header__cta">お問い合わせ</a>
+    </nav>
+    <button class="header__hamburger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer" aria-hidden="true">
+    <a href="rent.html" class="drawer__nav-link">賃貸物件</a>
+    <a href="buy.html" class="drawer__nav-link">売買物件</a>
+    <a href="about.html" class="drawer__nav-link">会社案内</a>
+    <a href="staff.html" class="drawer__nav-link">スタッフ</a>
+    <a href="owner.html" class="drawer__nav-link">オーナー様へ</a>
+    <a href="column.html" class="drawer__nav-link">コラム</a>
+    <a href="recruit.html" class="drawer__nav-link">採用情報</a>
+    <div class="drawer__cta"><a href="contact.html" class="btn btn--primary">お問い合わせ</a></div>
+  </div>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero reveal">
+      <div class="page-hero__inner">
+        <span class="page-hero__label-en">Staff</span>
+        <h1 class="page-hero__title">スタッフ紹介</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="パンくずリスト">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__link">TOP</a>
+        <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+        <span class="breadcrumb__current" aria-current="page">スタッフ紹介</span>
+      </div>
+    </nav>
+
+    <!-- Staff Section -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Staff">
+          <span class="section__label-en">Our Team</span>
+          <h2 class="section__title">私たちが、お手伝いします</h2>
+        </div>
+        <p class="section__lead" style="text-align:left;">地域を知り尽くしたスタッフが、お客様の理想の暮らしをサポートします。</p>
+
+        <div class="staff-grid">
+
+          <!-- Staff 01: 青木 誠一 -->
+          <div class="staff-card">
+            <div class="staff-card__photo">
+              <img src="assets/img/staff-01.jpg" alt="青木 誠一" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__name">青木 誠一</p>
+              <p class="staff-card__role">代表取締役</p>
+              <p class="staff-card__cert">宅地建物取引士</p>
+              <p class="staff-card__comment">地域のことなら何でもお任せください。一緒に最高の住まいを見つけましょう。</p>
+            </div>
+          </div>
+
+          <!-- Staff 02: 田中 美咲 -->
+          <div class="staff-card">
+            <div class="staff-card__photo">
+              <img src="assets/img/staff-02.jpg" alt="田中 美咲" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__name">田中 美咲</p>
+              <p class="staff-card__role">賃貸営業主任</p>
+              <p class="staff-card__cert">宅地建物取引士</p>
+              <p class="staff-card__comment">初めての一人暮らしも安心サポート。お気軽にご相談ください。</p>
+            </div>
+          </div>
+
+          <!-- Staff 03: 佐藤 健太 -->
+          <div class="staff-card">
+            <div class="staff-card__photo">
+              <img src="assets/img/staff-03.jpg" alt="佐藤 健太" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__name">佐藤 健太</p>
+              <p class="staff-card__role">売買営業</p>
+              <p class="staff-card__cert">宅地建物取引士・ファイナンシャルプランナー</p>
+              <p class="staff-card__comment">資金計画からご一緒に考えます。</p>
+            </div>
+          </div>
+
+          <!-- Staff 04: 鈴木 あゆみ -->
+          <div class="staff-card">
+            <div class="staff-card__photo">
+              <img src="assets/img/staff-04.jpg" alt="鈴木 あゆみ" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__name">鈴木 あゆみ</p>
+              <p class="staff-card__role">賃貸管理</p>
+              <p class="staff-card__cert">管理業務主任者</p>
+              <p class="staff-card__comment">オーナー様の大切な資産を丁寧にお守りします。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.svg" alt="Aoki Estate" width="180" height="40">
+          <p>杉並・中野・世田谷エリアに密着し、<br>お客様の理想の暮らしをサポートします。</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Menu</p>
+          <nav class="footer__nav">
+            <a href="rent.html">賃貸物件</a><a href="buy.html">売買物件</a>
+            <a href="about.html">会社案内</a><a href="staff.html">スタッフ</a>
+            <a href="owner.html">オーナー様へ</a><a href="voice.html">お客様の声</a><a href="column.html">コラム</a>
+            <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <p><strong>株式会社 Aoki Estate</strong></p>
+          <p>〒167-0043 東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+          <p>TEL: 03-XXXX-XXXX</p>
+          <p>営業時間: 10:00〜19:00（水曜定休）</p>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2025 Aoki Estate Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

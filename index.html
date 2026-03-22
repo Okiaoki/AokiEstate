@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aoki Estate | 杉並・中野・世田谷の不動産</title>
+  <meta name="description" content="Aoki Estateは杉並区・中野区・世田谷区を中心に、賃貸・売買物件をご紹介する不動産会社です。地域密着20年の信頼と実績で、お客様の住まい探しをサポートします。">
+  <meta name="theme-color" content="#5B7F5E">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Aoki Estate | 杉並・中野・世田谷の不動産">
+  <meta property="og:description" content="杉並区・中野区・世田谷区を中心に、賃貸・売買物件をご紹介。地域密着20年の信頼と実績。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aoki-estate.jp/">
+  <meta property="og:image" content="https://aoki-estate.jp/assets/img/ogp.jpg">
+  <meta property="og:site_name" content="Aoki Estate">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <img src="assets/img/logo.svg" alt="Aoki Estate" width="220" height="48">
+    </a>
+    <nav class="header__nav">
+      <div class="header__nav-item header__nav-item--dropdown">
+        <a href="#" class="header__nav-link">物件を探す</a>
+        <div class="header__dropdown">
+          <a href="rent.html">賃貸物件</a>
+          <a href="buy.html">売買物件</a>
+        </div>
+      </div>
+      <div class="header__nav-item"><a href="about.html" class="header__nav-link">会社案内</a></div>
+      <div class="header__nav-item"><a href="staff.html" class="header__nav-link">スタッフ</a></div>
+      <div class="header__nav-item"><a href="owner.html" class="header__nav-link">オーナー様へ</a></div>
+      <div class="header__nav-item"><a href="column.html" class="header__nav-link">コラム</a></div>
+      <div class="header__nav-item"><a href="recruit.html" class="header__nav-link">採用情報</a></div>
+      <a href="contact.html" class="btn btn--primary btn--sm header__cta">お問い合わせ</a>
+    </nav>
+    <button class="header__hamburger" aria-label="メニュー" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer" aria-hidden="true">
+    <a href="rent.html" class="drawer__nav-link">賃貸物件</a>
+    <a href="buy.html" class="drawer__nav-link">売買物件</a>
+    <a href="about.html" class="drawer__nav-link">会社案内</a>
+    <a href="staff.html" class="drawer__nav-link">スタッフ</a>
+    <a href="owner.html" class="drawer__nav-link">オーナー様へ</a>
+    <a href="column.html" class="drawer__nav-link">コラム</a>
+    <a href="recruit.html" class="drawer__nav-link">採用情報</a>
+    <div class="drawer__cta"><a href="contact.html" class="btn btn--primary">お問い合わせ</a></div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__catch">
+          <span class="hero__catch-line hero__catch-line--light">住まいに、</span>
+          <span class="hero__catch-line hero__catch-line--bold">物語を。</span>
+        </h1>
+        <p class="hero__sub">杉並・中野・世田谷の暮らしをご提案</p>
+        <div class="hero__cta-group">
+          <a href="rent.html" class="btn btn--primary btn--lg">物件を探す</a>
+          <a href="contact.html" class="btn btn--secondary btn--lg">ご相談はこちら</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ===== SEARCH SHORTCUT BAR ===== -->
+    <section class="search-bar reveal">
+      <div class="container">
+        <div class="search-bar__inner">
+          <div class="search-bar__tabs" role="tablist">
+            <button class="search-bar__tab is-active" role="tab" aria-selected="true" data-tab="rent">賃貸</button>
+            <button class="search-bar__tab" role="tab" aria-selected="false" data-tab="buy">売買</button>
+          </div>
+          <form class="search-bar__form" action="rent.html" method="get">
+            <div class="search-bar__field">
+              <label for="search-area" class="search-bar__label">エリア</label>
+              <select id="search-area" name="area" class="search-bar__select">
+                <option value="">選択してください</option>
+                <option value="suginami">杉並区</option>
+                <option value="nakano">中野区</option>
+                <option value="setagaya">世田谷区</option>
+              </select>
+            </div>
+            <div class="search-bar__field">
+              <label for="search-plan" class="search-bar__label">間取り</label>
+              <select id="search-plan" name="plan" class="search-bar__select">
+                <option value="">選択してください</option>
+                <option value="1r">1R</option>
+                <option value="1k">1K</option>
+                <option value="1dk">1DK</option>
+                <option value="1ldk">1LDK</option>
+                <option value="2ldk">2LDK</option>
+                <option value="3ldk">3LDK以上</option>
+              </select>
+            </div>
+            <button type="submit" class="search-bar__submit btn btn--primary">検索する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 新着物件 (New Arrivals) ===== -->
+    <section class="section section--arrivals reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="New">
+          <span class="section__label-en">New Arrivals</span>
+          <h2 class="section__title">新着物件</h2>
+        </div>
+
+        <div class="property-grid property-grid--top">
+
+          <!-- Card: R-01 -->
+          <a href="property/maison-ogikubo.html" class="property-card">
+            <div class="property-card__image">
+              <img src="assets/img/property-r01-main.jpg" alt="メゾン杉並 荻窪 201" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--rent">賃貸</span>
+                <span class="badge badge--new">NEW</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__title">メゾン杉並 荻窪 201</h3>
+              <p class="property-card__access">JR中央線 荻窪駅 徒歩7分</p>
+              <div class="property-card__info">
+                <span class="property-card__price">8.5万円<small>/月</small></span>
+                <span class="property-card__spec">1LDK・38.5㎡</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card: R-02 -->
+          <a href="property/flora-nakano.html" class="property-card">
+            <div class="property-card__image">
+              <img src="assets/img/property-r02-main.jpg" alt="フローラ中野坂上 305" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--rent">賃貸</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__title">フローラ中野坂上 305</h3>
+              <p class="property-card__access">丸ノ内線 中野坂上駅 徒歩4分</p>
+              <div class="property-card__info">
+                <span class="property-card__price">11.2万円<small>/月</small></span>
+                <span class="property-card__spec">2LDK・52.3㎡</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card: S-01 -->
+          <a href="property/presia-ogikubo.html" class="property-card">
+            <div class="property-card__image">
+              <img src="assets/img/property-s01-main.jpg" alt="プレシア荻窪レジデンス 405" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--buy">売買</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__title">プレシア荻窪レジデンス 405</h3>
+              <p class="property-card__access">JR中央線 荻窪駅 徒歩10分</p>
+              <div class="property-card__info">
+                <span class="property-card__price">4,580万円</span>
+                <span class="property-card__spec">3LDK・68.4㎡</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card: S-03 -->
+          <a href="property/setagaya-terrace.html" class="property-card">
+            <div class="property-card__image">
+              <img src="assets/img/property-s03-main.jpg" alt="世田谷テラスコート" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--buy">売買</span>
+                <span class="badge badge--new">NEW</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__title">世田谷テラスコート</h3>
+              <p class="property-card__access">小田急線 千歳船橋駅 徒歩12分</p>
+              <div class="property-card__info">
+                <span class="property-card__price">7,280万円</span>
+                <span class="property-card__spec">4LDK・96.8㎡</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="section__more">
+          <a href="rent.html" class="text-link">物件一覧を見る →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 選ばれる理由 (Our Strengths) ===== -->
+    <section class="section section--alt section--strengths reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Strengths">
+          <span class="section__label-en">Our Strengths</span>
+          <h2 class="section__title">選ばれる理由</h2>
+        </div>
+
+        <div class="feature-grid">
+
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M24 28C24 28 10 22 10 14C10 6 17 2 24 2C31 2 38 6 38 14C38 22 24 28 24 28Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 28V44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 38H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 42H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title heading-ja">地域密着20年の信頼</h3>
+            <p class="feature-card__desc">杉並・中野・世田谷エリアに根差して20年。地元を知り尽くしたスタッフが、周辺環境や将来性を踏まえた最適なご提案をいたします。大手にはない、街の不動産屋ならではのきめ細やかな対応が私たちの強みです。</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 28C8 28 12 24 16 24C18 24 19 26 20 26C22 26 23 22 24 22C25 22 26 26 28 26C29 26 30 24 32 24C36 24 40 28 40 28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 30L14 24L12 20C12 20 8 18 6 22C4 26 6 30 6 30Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42 30L34 24L36 20C36 20 40 18 42 22C44 26 42 30 42 30Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 34V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24 32V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M32 34V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 40H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title heading-ja">賃貸も売買もワンストップ</h3>
+            <p class="feature-card__desc">お部屋探しからマイホーム購入、投資用物件まで、不動産に関するあらゆるニーズにワンストップでお応えします。ライフステージの変化に合わせて、長くお付き合いいただけるパートナーを目指しています。</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="6" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M8 26H40" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 30V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 36H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="16" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M20 22C20 22 21 20 24 20C27 20 28 22 28 22" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M34 42H38C38 42 40 42 40 40V38" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="30" y="38" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title heading-ja">充実のWebサポート</h3>
+            <p class="feature-card__desc">オンライン内見やビデオ通話相談など、ご来店いただかなくてもお部屋探しが可能です。Webサイトでは360°パノラマ写真や周辺環境情報も充実。忙しい方でもスムーズにお住まいを見つけていただけます。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== エリアガイド (Area Guide) ===== -->
+    <section class="section section--area reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Area">
+          <span class="section__label-en">Area Guide</span>
+          <h2 class="section__title">エリアガイド</h2>
+        </div>
+
+        <div class="area-grid">
+
+          <!-- 杉並区 -->
+          <div class="area-card">
+            <div class="area-card__image">
+              <img src="assets/img/area-suginami.jpg" alt="杉並区" class="area-card__img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">杉並区</h3>
+              <p class="area-card__desc">閑静な住宅街と豊かな緑。中央線沿線の利便性と落ち着いた暮らしが両立するエリアです。荻窪・西荻窪・阿佐ヶ谷など、個性豊かな街が点在しています。</p>
+              <a href="rent.html?area=suginami" class="text-link">このエリアの物件を見る →</a>
+            </div>
+          </div>
+
+          <!-- 中野区 -->
+          <div class="area-card">
+            <div class="area-card__image">
+              <img src="assets/img/area-nakano.jpg" alt="中野区" class="area-card__img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">中野区</h3>
+              <p class="area-card__desc">サブカルチャーの街から、住みやすい街へ。再開発が進む中野駅周辺を中心に、新宿へのアクセス抜群の利便性と下町情緒が魅力のエリアです。</p>
+              <a href="rent.html?area=nakano" class="text-link">このエリアの物件を見る →</a>
+            </div>
+          </div>
+
+          <!-- 世田谷区 -->
+          <div class="area-card">
+            <div class="area-card__image">
+              <img src="assets/img/area-setagaya.jpg" alt="世田谷区" class="area-card__img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="area-card__body">
+              <h3 class="area-card__title">世田谷区</h3>
+              <p class="area-card__desc">落ち着いた住環境と充実した子育て環境。緑豊かな公園や教育施設が充実し、ファミリー層に根強い人気を誇るエリアです。</p>
+              <a href="rent.html?area=setagaya" class="text-link">このエリアの物件を見る →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== お客様の声 (Voice) ===== -->
+    <section class="section section--alt section--voice reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Voice">
+          <span class="section__label-en">Voice</span>
+          <h2 class="section__title">お客様の声</h2>
+        </div>
+
+        <div class="voice-grid">
+
+          <!-- Voice 1 -->
+          <div class="voice-card">
+            <div class="voice-card__quote">
+              <svg class="voice-card__quote-icon" width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M0 24V14.4C0 11.7333 0.4 9.33333 1.2 7.2C2.05556 5.06667 3.22222 3.2 4.7 1.6L8.5 4C7.35556 5.33333 6.52222 6.71111 6 8.13333C5.53333 9.55556 5.3 11.0222 5.3 12.5333H10V24H0ZM18 24V14.4C18 11.7333 18.4 9.33333 19.2 7.2C20.0556 5.06667 21.2222 3.2 22.7 1.6L26.5 4C25.3556 5.33333 24.5222 6.71111 24 8.13333C23.5333 9.55556 23.3 11.0222 23.3 12.5333H28V24H18Z" fill="currentColor"/>
+              </svg>
+              <blockquote class="voice-card__text">
+                初めての一人暮らしで不安でしたが、担当の方がとても親身に相談に乗ってくださいました。地域のことにも詳しく、スーパーや病院の場所まで教えていただけて安心できました。おかげで理想のお部屋に出会えました。
+              </blockquote>
+            </div>
+            <div class="voice-card__author">
+              <div class="voice-card__avatar">
+                <div class="voice-card__avatar-placeholder">K.T</div>
+              </div>
+              <div class="voice-card__meta">
+                <span class="voice-card__name">K.T 様</span>
+                <span class="voice-card__detail">杉並区・賃貸 / 20代女性</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voice 2 -->
+          <div class="voice-card">
+            <div class="voice-card__quote">
+              <svg class="voice-card__quote-icon" width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M0 24V14.4C0 11.7333 0.4 9.33333 1.2 7.2C2.05556 5.06667 3.22222 3.2 4.7 1.6L8.5 4C7.35556 5.33333 6.52222 6.71111 6 8.13333C5.53333 9.55556 5.3 11.0222 5.3 12.5333H10V24H0ZM18 24V14.4C18 11.7333 18.4 9.33333 19.2 7.2C20.0556 5.06667 21.2222 3.2 22.7 1.6L26.5 4C25.3556 5.33333 24.5222 6.71111 24 8.13333C23.5333 9.55556 23.3 11.0222 23.3 12.5333H28V24H18Z" fill="currentColor"/>
+              </svg>
+              <blockquote class="voice-card__text">
+                中古マンションの購入でお世話になりました。物件の良い点だけでなく、注意点も正直に教えていただけたので信頼できました。住宅ローンの相談から引き渡しまで、ワンストップで対応いただけたのも助かりました。
+              </blockquote>
+            </div>
+            <div class="voice-card__author">
+              <div class="voice-card__avatar">
+                <div class="voice-card__avatar-placeholder">S.M</div>
+              </div>
+              <div class="voice-card__meta">
+                <span class="voice-card__name">S.M 様</span>
+                <span class="voice-card__detail">世田谷区・売買 / 30代ご夫婦</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section__more">
+          <a href="voice.html" class="text-link">もっと見る →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Owner Banner ===== -->
+    <section class="banner reveal">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__text">
+            <p class="banner__catch">不動産オーナー様へ</p>
+            <p class="banner__desc">資産価値を最大化する管理をご提案。賃貸経営のお悩み、お気軽にご相談ください。</p>
+          </div>
+          <a href="owner.html" class="btn btn--ghost">詳しく見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== お問い合わせ (Contact CTA) ===== -->
+    <section class="section section--contact reveal">
+      <div class="container">
+        <div class="section__heading section__heading--center" data-watermark="Contact">
+          <span class="section__label-en">Contact</span>
+          <h2 class="section__title">お問い合わせ</h2>
+        </div>
+        <p class="section__lead">物件に関するご質問、内見のご予約、その他どんなことでもお気軽にお問い合わせください。<br>経験豊富なスタッフが丁寧にご対応いたします。</p>
+        <div class="section__cta-center">
+          <a href="contact.html" class="btn btn--primary btn--lg">お問い合わせはこちら</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.svg" alt="Aoki Estate" width="180" height="40">
+          <p>杉並・中野・世田谷エリアに密着し、<br>お客様の理想の暮らしをサポートします。</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Menu</p>
+          <nav class="footer__nav">
+            <a href="rent.html">賃貸物件</a>
+            <a href="buy.html">売買物件</a>
+            <a href="about.html">会社案内</a>
+            <a href="staff.html">スタッフ</a>
+            <a href="owner.html">オーナー様へ</a>
+            <a href="voice.html">お客様の声</a>
+            <a href="column.html">コラム</a>
+            <a href="recruit.html">採用情報</a>
+            <a href="contact.html">お問い合わせ</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <p><strong>株式会社 Aoki Estate</strong></p>
+          <p>〒167-0043 東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+          <p>TEL: 03-XXXX-XXXX</p>
+          <p>営業時間: 10:00〜19:00（水曜定休）</p>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2025 Aoki Estate Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

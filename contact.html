@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | Aoki Estate</title>
+  <meta name="description" content="Aoki Estateへのお問い合わせ。物件のご相談・内覧予約・売却査定・採用に関するお問い合わせは、お気軽にご連絡ください。">
+  <meta name="theme-color" content="#5B7F5E">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="お問い合わせ | Aoki Estate">
+  <meta property="og:description" content="Aoki Estateへのお問い合わせ。物件のご相談・内覧予約・売却査定など、お気軽にご連絡ください。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Aoki Estate">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="Aoki Estate" width="220" height="48"></a>
+    <nav class="header__nav">
+      <div class="header__nav-item header__nav-item--dropdown">
+        <a href="#" class="header__nav-link">物件を探す</a>
+        <div class="header__dropdown"><a href="rent.html">賃貸物件</a><a href="buy.html">売買物件</a></div>
+      </div>
+      <div class="header__nav-item"><a href="about.html" class="header__nav-link">会社案内</a></div>
+      <div class="header__nav-item"><a href="staff.html" class="header__nav-link">スタッフ</a></div>
+      <div class="header__nav-item"><a href="owner.html" class="header__nav-link">オーナー様へ</a></div>
+      <div class="header__nav-item"><a href="column.html" class="header__nav-link">コラム</a></div>
+      <div class="header__nav-item"><a href="recruit.html" class="header__nav-link">採用情報</a></div>
+      <a href="contact.html" class="btn btn--primary btn--sm header__cta">お問い合わせ</a>
+    </nav>
+    <button class="header__hamburger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer" aria-hidden="true">
+    <a href="rent.html" class="drawer__nav-link">賃貸物件</a>
+    <a href="buy.html" class="drawer__nav-link">売買物件</a>
+    <a href="about.html" class="drawer__nav-link">会社案内</a>
+    <a href="staff.html" class="drawer__nav-link">スタッフ</a>
+    <a href="owner.html" class="drawer__nav-link">オーナー様へ</a>
+    <a href="column.html" class="drawer__nav-link">コラム</a>
+    <a href="recruit.html" class="drawer__nav-link">採用情報</a>
+    <div class="drawer__cta"><a href="contact.html" class="btn btn--primary">お問い合わせ</a></div>
+  </div>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero reveal">
+      <div class="page-hero__inner">
+        <span class="page-hero__label-en">Contact</span>
+        <h1 class="page-hero__title">お問い合わせ</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="パンくずリスト">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__link">TOP</a>
+        <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+        <span class="breadcrumb__current" aria-current="page">お問い合わせ</span>
+      </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Contact">
+          <span class="section__label-en">Get in Touch</span>
+          <h2 class="section__title contact-catch">
+            <span class="contact-catch__light">まずは、</span>
+            <span class="contact-catch__bold">お気軽にご相談ください。</span>
+          </h2>
+        </div>
+        <p class="contact-lead">物件のご相談・内覧予約・売却査定・採用に関するお問い合わせは、下記フォームよりお気軽にどうぞ。</p>
+
+        <form id="contact-form" action="https://formspree.io/f/xxxxxx" method="POST" class="form-card" novalidate>
+
+          <!-- Input Step -->
+          <div class="form-input-step">
+
+            <!-- お問い合わせ種別 -->
+            <fieldset class="form-group">
+              <legend class="form-group__label">お問い合わせ種別</legend>
+              <div class="form-group__radios">
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="賃貸物件のご相談">
+                  <span class="form-radio__text">賃貸物件のご相談</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="売買物件のご相談">
+                  <span class="form-radio__text">売買物件のご相談</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="売却・査定のご依頼">
+                  <span class="form-radio__text">売却・査定のご依頼</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="賃貸管理のご相談">
+                  <span class="form-radio__text">賃貸管理のご相談</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="採用について">
+                  <span class="form-radio__text">採用について</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="inquiry-type" value="その他">
+                  <span class="form-radio__text">その他</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- 物件名 -->
+            <div class="form-group">
+              <label class="form-group__label" for="property">物件名</label>
+              <input type="text" id="property" name="property" class="form-group__input" placeholder="例：グランメゾン荻窪 201号室">
+            </div>
+
+            <!-- お名前 -->
+            <div class="form-group" data-required="true">
+              <label class="form-group__label form-group__label--required" for="name">お名前</label>
+              <input type="text" id="name" name="name" class="form-group__input" required placeholder="例：青木 太郎">
+              <p class="form-group__error" aria-live="polite">お名前を入力してください</p>
+            </div>
+
+            <!-- フリガナ -->
+            <div class="form-group" data-required="katakana">
+              <label class="form-group__label form-group__label--required" for="furigana">フリガナ</label>
+              <input type="text" id="furigana" name="furigana" class="form-group__input" required placeholder="例：アオキ タロウ">
+              <p class="form-group__error" aria-live="polite">カタカナで入力してください</p>
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="form-group" data-required="email">
+              <label class="form-group__label form-group__label--required" for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" class="form-group__input" required placeholder="例：info@example.com">
+              <p class="form-group__error" aria-live="polite">正しいメールアドレスを入力してください</p>
+            </div>
+
+            <!-- 電話番号 -->
+            <div class="form-group">
+              <label class="form-group__label" for="tel">電話番号</label>
+              <input type="tel" id="tel" name="tel" class="form-group__input" placeholder="例：03-1234-5678">
+            </div>
+
+            <!-- ご希望の連絡方法 -->
+            <fieldset class="form-group">
+              <legend class="form-group__label">ご希望の連絡方法</legend>
+              <div class="form-group__radios">
+                <label class="form-radio">
+                  <input type="radio" name="contact-method" value="メール">
+                  <span class="form-radio__text">メール</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="contact-method" value="電話">
+                  <span class="form-radio__text">電話</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="contact-method" value="どちらでも">
+                  <span class="form-radio__text">どちらでも</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- メッセージ -->
+            <div class="form-group" data-required="true">
+              <label class="form-group__label form-group__label--required" for="message">メッセージ</label>
+              <textarea id="message" name="message" class="form-group__textarea" required rows="6" placeholder="お問い合わせ内容をご記入ください"></textarea>
+              <p class="form-group__error" aria-live="polite">メッセージを入力してください</p>
+            </div>
+
+            <!-- Honeypot -->
+            <input type="text" name="hp-field" class="form-hp" tabindex="-1" autocomplete="off">
+
+            <div class="form-group__actions">
+              <button type="button" class="btn btn--primary form-confirm-btn">入力内容を確認する</button>
+            </div>
+          </div>
+
+          <!-- Confirm Step -->
+          <div class="form-confirm">
+            <table class="form-confirm__table">
+              <tbody></tbody>
+            </table>
+            <div class="form-confirm__actions">
+              <button type="button" class="btn btn--secondary form-confirm__back">修正する</button>
+              <button type="submit" class="btn btn--primary form-confirm__submit">送信する</button>
+            </div>
+          </div>
+
+          <!-- Complete Step -->
+          <div class="form-complete">
+            <div class="form-complete__icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" stroke="#5B7F5E" stroke-width="3"/>
+                <path d="M20 33L28 41L44 25" stroke="#5B7F5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="form-complete__title">お問い合わせありがとうございます</h3>
+            <p class="form-complete__text">2営業日以内にご連絡いたします。</p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section section--alt reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Info">
+          <span class="section__label-en">Other Ways to Reach Us</span>
+          <h2 class="section__title">その他のお問い合わせ方法</h2>
+        </div>
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-card__label">所在地</p>
+              <p class="contact-info-card__value">〒167-0043<br>東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-card__label">電話番号</p>
+              <p class="contact-info-card__value">03-XXXX-XXXX</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-card__label">営業時間</p>
+              <p class="contact-info-card__value">10:00〜19:00（水曜定休）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.svg" alt="Aoki Estate" width="180" height="40">
+          <p>杉並・中野・世田谷エリアに密着し、<br>お客様の理想の暮らしをサポートします。</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Menu</p>
+          <nav class="footer__nav">
+            <a href="rent.html">賃貸物件</a><a href="buy.html">売買物件</a>
+            <a href="about.html">会社案内</a><a href="staff.html">スタッフ</a>
+            <a href="owner.html">オーナー様へ</a><a href="voice.html">お客様の声</a><a href="column.html">コラム</a>
+            <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <p><strong>株式会社 Aoki Estate</strong></p>
+          <p>〒167-0043 東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+          <p>TEL: 03-XXXX-XXXX</p>
+          <p>営業時間: 10:00〜19:00（水曜定休）</p>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2025 Aoki Estate Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

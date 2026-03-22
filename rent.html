@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>賃貸物件一覧 | Aoki Estate</title>
+  <meta name="description" content="杉並・中野・世田谷エリアの賃貸物件一覧。Aoki Estateがお客様の理想の暮らしをサポートします。">
+  <meta name="theme-color" content="#5B7F5E">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <!-- OGP -->
+  <meta property="og:title" content="賃貸物件一覧 | Aoki Estate">
+  <meta property="og:description" content="杉並・中野・世田谷エリアの賃貸物件一覧。Aoki Estateがお客様の理想の暮らしをサポートします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Aoki Estate">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="Aoki Estate" width="220" height="48"></a>
+    <nav class="header__nav">
+      <div class="header__nav-item header__nav-item--dropdown">
+        <a href="#" class="header__nav-link">物件を探す</a>
+        <div class="header__dropdown">
+          <a href="rent.html">賃貸物件</a>
+          <a href="buy.html">売買物件</a>
+        </div>
+      </div>
+      <div class="header__nav-item"><a href="about.html" class="header__nav-link">会社案内</a></div>
+      <div class="header__nav-item"><a href="staff.html" class="header__nav-link">スタッフ</a></div>
+      <div class="header__nav-item"><a href="owner.html" class="header__nav-link">オーナー様へ</a></div>
+      <div class="header__nav-item"><a href="column.html" class="header__nav-link">コラム</a></div>
+      <div class="header__nav-item"><a href="recruit.html" class="header__nav-link">採用情報</a></div>
+      <a href="contact.html" class="btn btn--primary btn--sm header__cta">お問い合わせ</a>
+    </nav>
+    <button class="header__hamburger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer" aria-hidden="true">
+    <a href="rent.html" class="drawer__nav-link">賃貸物件</a>
+    <a href="buy.html" class="drawer__nav-link">売買物件</a>
+    <a href="about.html" class="drawer__nav-link">会社案内</a>
+    <a href="staff.html" class="drawer__nav-link">スタッフ</a>
+    <a href="owner.html" class="drawer__nav-link">オーナー様へ</a>
+    <a href="column.html" class="drawer__nav-link">コラム</a>
+    <a href="recruit.html" class="drawer__nav-link">採用情報</a>
+    <div class="drawer__cta"><a href="contact.html" class="btn btn--primary">お問い合わせ</a></div>
+  </div>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero reveal">
+      <div class="page-hero__inner">
+        <span class="page-hero__label-en">Rent</span>
+        <h1 class="page-hero__title">賃貸物件</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="パンくずリスト">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__link">TOP</a>
+        <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+        <span class="breadcrumb__current" aria-current="page">賃貸物件</span>
+      </div>
+    </nav>
+
+    <!-- Mobile Filter Button -->
+    <div class="mobile-filter-wrap reveal">
+      <button class="mobile-filter-btn" type="button" aria-expanded="false">条件で絞り込む</button>
+    </div>
+
+    <!-- Listing Layout -->
+    <div class="listing-layout reveal">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <form class="sidebar__form">
+          <h2 class="sidebar__title">条件で絞り込む</h2>
+
+          <!-- エリア -->
+          <fieldset class="sidebar__group">
+            <legend class="sidebar__group-title">エリア</legend>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="area" value="suginami">
+              <span>杉並区</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="area" value="nakano">
+              <span>中野区</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="area" value="setagaya">
+              <span>世田谷区</span>
+            </label>
+          </fieldset>
+
+          <!-- 賃料 -->
+          <fieldset class="sidebar__group">
+            <legend class="sidebar__group-title">賃料</legend>
+            <div class="sidebar__range">
+              <select name="price-min" class="sidebar__select">
+                <option value="">指定なし</option>
+                <option value="50000">5万</option>
+                <option value="60000">6万</option>
+                <option value="70000">7万</option>
+                <option value="80000">8万</option>
+                <option value="90000">9万</option>
+                <option value="100000">10万</option>
+                <option value="120000">12万</option>
+                <option value="150000">15万</option>
+              </select>
+              <span class="sidebar__range-sep">〜</span>
+              <select name="price-max" class="sidebar__select">
+                <option value="">指定なし</option>
+                <option value="50000">5万</option>
+                <option value="60000">6万</option>
+                <option value="70000">7万</option>
+                <option value="80000">8万</option>
+                <option value="90000">9万</option>
+                <option value="100000">10万</option>
+                <option value="120000">12万</option>
+                <option value="150000">15万</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- 間取り -->
+          <fieldset class="sidebar__group">
+            <legend class="sidebar__group-title">間取り</legend>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="1r">
+              <span>1R</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="1k">
+              <span>1K</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="1dk">
+              <span>1DK</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="1ldk">
+              <span>1LDK</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="2ldk">
+              <span>2LDK</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="layout" value="3ldk">
+              <span>3LDK以上</span>
+            </label>
+          </fieldset>
+
+          <!-- こだわり -->
+          <fieldset class="sidebar__group">
+            <legend class="sidebar__group-title">こだわり</legend>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="feature" value="pet">
+              <span>ペット可</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="feature" value="autolock">
+              <span>オートロック</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="feature" value="bath-toilet-separate">
+              <span>バス・トイレ別</span>
+            </label>
+            <label class="sidebar__checkbox">
+              <input type="checkbox" name="feature" value="parking">
+              <span>駐車場あり</span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primary sidebar__submit">検索する</button>
+        </form>
+      </aside>
+
+      <!-- Listing Main -->
+      <div class="listing-main">
+
+        <!-- Listing Header -->
+        <div class="listing-header">
+          <p class="listing-header__count"><span class="listing-header__count-num">3</span>件</p>
+          <div class="listing-header__sort">
+            <select name="sort" class="listing-header__sort-select">
+              <option value="date-desc">新着順</option>
+              <option value="price-asc">賃料が安い順</option>
+              <option value="price-desc">賃料が高い順</option>
+              <option value="size-desc">面積が広い順</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Property Grid -->
+        <div class="property-grid">
+
+          <!-- R-01 -->
+          <a href="property/maison-ogikubo.html" class="property-card" data-area="suginami" data-layout="1ldk" data-price="85000" data-size="38.5" data-date="20250301" data-feature="autolock,bath-toilet-separate">
+            <div class="property-card__img">
+              <img src="assets/img/property-r01-main.jpg" alt="メゾン杉並 荻窪 201" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--rent">賃貸</span>
+                <span class="badge badge--new">NEW</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">メゾン杉並 荻窪 201</h3>
+              <p class="property-card__price">8.5万円<span class="property-card__price-unit">/月</span><span class="property-card__price-sub">（管理費 5,000円）</span></p>
+              <p class="property-card__access">JR中央線 荻窪駅 徒歩7分</p>
+              <ul class="property-card__spec">
+                <li>1LDK</li>
+                <li>38.5㎡</li>
+                <li>2019年3月</li>
+              </ul>
+            </div>
+          </a>
+
+          <!-- R-02 -->
+          <a href="property/flora-nakano.html" class="property-card" data-area="nakano" data-layout="2ldk" data-price="112000" data-size="52.3" data-date="20250201" data-feature="autolock">
+            <div class="property-card__img">
+              <img src="assets/img/property-r02-main.jpg" alt="フローラ中野坂上 305" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--rent">賃貸</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">フローラ中野坂上 305</h3>
+              <p class="property-card__price">11.2万円<span class="property-card__price-unit">/月</span><span class="property-card__price-sub">（管理費 8,000円）</span></p>
+              <p class="property-card__access">丸ノ内線 中野坂上駅 徒歩4分</p>
+              <ul class="property-card__spec">
+                <li>2LDK</li>
+                <li>52.3㎡</li>
+                <li>2021年8月</li>
+              </ul>
+            </div>
+          </a>
+
+          <!-- R-03 -->
+          <a href="property/corpo-kyodo.html" class="property-card" data-area="setagaya" data-layout="1k" data-price="68000" data-size="25.8" data-date="20250101" data-feature="bath-toilet-separate">
+            <div class="property-card__img">
+              <img src="assets/img/property-r03-main.jpg" alt="コーポ世田谷 経堂 102" loading="lazy">
+              <div class="property-card__badges">
+                <span class="badge badge--rent">賃貸</span>
+              </div>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">コーポ世田谷 経堂 102</h3>
+              <p class="property-card__price">6.8万円<span class="property-card__price-unit">/月</span><span class="property-card__price-sub">（管理費 3,000円）</span></p>
+              <p class="property-card__access">小田急線 経堂駅 徒歩6分</p>
+              <ul class="property-card__spec">
+                <li>1K</li>
+                <li>25.8㎡</li>
+                <li>2015年11月</li>
+              </ul>
+            </div>
+          </a>
+
+        </div><!-- /.property-grid -->
+
+        <!-- Empty Message -->
+        <div class="listing-empty">
+          <p>条件に一致する物件が見つかりませんでした。<br>条件を変更して再度お試しください。</p>
+        </div>
+
+      </div><!-- /.listing-main -->
+
+    </div><!-- /.listing-layout -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.svg" alt="Aoki Estate" width="180" height="40">
+          <p>杉並・中野・世田谷エリアに密着し、<br>お客様の理想の暮らしをサポートします。</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Menu</p>
+          <nav class="footer__nav">
+            <a href="rent.html">賃貸物件</a><a href="buy.html">売買物件</a>
+            <a href="about.html">会社案内</a><a href="staff.html">スタッフ</a>
+            <a href="owner.html">オーナー様へ</a><a href="voice.html">お客様の声</a><a href="column.html">コラム</a>
+            <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <p><strong>株式会社 Aoki Estate</strong></p>
+          <p>〒167-0043 東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+          <p>TEL: 03-XXXX-XXXX</p>
+          <p>営業時間: 10:00〜19:00（水曜定休）</p>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2025 Aoki Estate Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オーナー様へ | Aoki Estate</title>
+  <meta name="description" content="不動産オーナー様向けの賃貸管理サービス・売却サポートのご案内。Aoki Estateが大切な資産の管理・運用をお手伝いします。">
+  <meta name="theme-color" content="#5B7F5E">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="オーナー様へ | Aoki Estate">
+  <meta property="og:description" content="不動産オーナー様向けの賃貸管理サービス・売却サポートのご案内。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Aoki Estate">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="Aoki Estate" width="220" height="48"></a>
+    <nav class="header__nav">
+      <div class="header__nav-item header__nav-item--dropdown">
+        <a href="#" class="header__nav-link">物件を探す</a>
+        <div class="header__dropdown">
+          <a href="rent.html">賃貸物件</a>
+          <a href="buy.html">売買物件</a>
+        </div>
+      </div>
+      <div class="header__nav-item"><a href="about.html" class="header__nav-link">会社案内</a></div>
+      <div class="header__nav-item"><a href="staff.html" class="header__nav-link">スタッフ</a></div>
+      <div class="header__nav-item"><a href="owner.html" class="header__nav-link">オーナー様へ</a></div>
+      <div class="header__nav-item"><a href="column.html" class="header__nav-link">コラム</a></div>
+      <div class="header__nav-item"><a href="recruit.html" class="header__nav-link">採用情報</a></div>
+      <a href="contact.html" class="btn btn--primary btn--sm header__cta">お問い合わせ</a>
+    </nav>
+    <button class="header__hamburger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer" aria-hidden="true">
+    <a href="rent.html" class="drawer__nav-link">賃貸物件</a>
+    <a href="buy.html" class="drawer__nav-link">売買物件</a>
+    <a href="about.html" class="drawer__nav-link">会社案内</a>
+    <a href="staff.html" class="drawer__nav-link">スタッフ</a>
+    <a href="owner.html" class="drawer__nav-link">オーナー様へ</a>
+    <a href="column.html" class="drawer__nav-link">コラム</a>
+    <a href="recruit.html" class="drawer__nav-link">採用情報</a>
+    <div class="drawer__cta"><a href="contact.html" class="btn btn--primary">お問い合わせ</a></div>
+  </div>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero reveal">
+      <div class="page-hero__inner">
+        <span class="page-hero__label-en">For Owners</span>
+        <h1 class="page-hero__title">オーナー様へ</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="パンくずリスト">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__link">TOP</a>
+        <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+        <span class="breadcrumb__current" aria-current="page">オーナー様へ</span>
+      </div>
+    </nav>
+
+    <!-- Lead — 案1: ウェイトコントラスト -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section__heading" data-watermark="Owner">
+          <span class="section__label-en">For Owners</span>
+          <h2 class="section__title owner-catch">
+            <span class="owner-catch__light">大切な資産を、</span>
+            <span class="owner-catch__bold">確かな管理と運用で最大化。</span>
+          </h2>
+        </div>
+        <p class="section__lead" style="text-align:left;">Aoki Estate では、オーナー様の大切な不動産資産を最大限に活かすため、<br>賃貸管理から売却サポートまでワンストップでお手伝いいたします。</p>
+      </div>
+    </section>
+
+    <!-- 賃貸管理サービス -->
+    <section class="section section--alt reveal" id="management">
+      <div class="container">
+        <div class="section__heading" data-watermark="Management">
+          <span class="section__label-en">Rental Management</span>
+          <h2 class="section__title">賃貸管理サービス</h2>
+        </div>
+        <div class="owner-service">
+          <ul class="owner-service__list">
+            <li class="owner-service__item">
+              <span class="owner-service__icon">01</span>
+              <div>
+                <strong>入居者募集</strong>
+                <p>ポータルサイト掲載から内見案内まで、空室を早期に解消します。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">02</span>
+              <div>
+                <strong>契約管理</strong>
+                <p>契約書作成・更新手続き・退去時の精算まで一括対応。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">03</span>
+              <div>
+                <strong>家賃回収代行</strong>
+                <p>家賃の集金・送金・滞納時のフォローまでお任せください。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">04</span>
+              <div>
+                <strong>クレーム対応</strong>
+                <p>入居者からのご連絡を24時間体制で受付・対応いたします。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">05</span>
+              <div>
+                <strong>退去立会い・原状回復</strong>
+                <p>退去時の立会いから原状回復工事の手配・精算まで。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">06</span>
+              <div>
+                <strong>定期報告</strong>
+                <p>月次収支報告書をお届けし、資産状況を見える化します。</p>
+              </div>
+            </li>
+          </ul>
+          <div class="owner-service__note">
+            <span class="owner-service__note-label">管理手数料</span>
+            <span class="owner-service__note-value">賃料の <strong>5%</strong>（税別）</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 案2: 実績バナー -->
+    <section class="owner-stats reveal">
+      <div class="container">
+        <div class="owner-stats__grid">
+          <div class="owner-stats__item">
+            <span class="owner-stats__number">300</span>
+            <span class="owner-stats__unit">戸</span>
+            <span class="owner-stats__label">管理戸数</span>
+          </div>
+          <div class="owner-stats__item">
+            <span class="owner-stats__number">98.2</span>
+            <span class="owner-stats__unit">%</span>
+            <span class="owner-stats__label">入居率</span>
+          </div>
+          <div class="owner-stats__item">
+            <span class="owner-stats__number">18</span>
+            <span class="owner-stats__unit">日</span>
+            <span class="owner-stats__label">平均空室期間</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 売却サポート -->
+    <section class="section reveal" id="sell">
+      <div class="container">
+        <div class="section__heading" data-watermark="Selling">
+          <span class="section__label-en">Sales Support</span>
+          <h2 class="section__title">売却サポート</h2>
+        </div>
+        <div class="owner-service">
+          <ul class="owner-service__list">
+            <li class="owner-service__item">
+              <span class="owner-service__icon">01</span>
+              <div>
+                <strong>無料査定</strong>
+                <p>近隣相場と物件特性を踏まえた適正価格をご提案します。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">02</span>
+              <div>
+                <strong>売却プランのご提案</strong>
+                <p>スケジュール・販売戦略・税務面まで総合的にアドバイス。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">03</span>
+              <div>
+                <strong>販売活動</strong>
+                <p>ポータルサイト・チラシ・内覧会など多角的な集客を実施。</p>
+              </div>
+            </li>
+            <li class="owner-service__item">
+              <span class="owner-service__icon">04</span>
+              <div>
+                <strong>契約・引渡しサポート</strong>
+                <p>契約書類の作成から引渡しまで、安心のフルサポート体制。</p>
+              </div>
+            </li>
+          </ul>
+          <div class="owner-service__note">
+            <span class="owner-service__note-value">まずは無料査定からお気軽にどうぞ。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA — 案4: ダーク背景 -->
+    <section class="owner-cta reveal">
+      <div class="container">
+        <span class="owner-cta__label">Contact</span>
+        <h2 class="owner-cta__title">お気軽にご相談ください</h2>
+        <p class="owner-cta__text">賃貸管理・売却・資産活用のご相談は無料です。<br>経験豊富なスタッフが丁寧にご対応いたします。</p>
+        <a href="contact.html" class="btn btn--ghost btn--lg">オーナー様向けご相談</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.svg" alt="Aoki Estate" width="180" height="40">
+          <p>杉並・中野・世田谷エリアに密着し、<br>お客様の理想の暮らしをサポートします。</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">Menu</p>
+          <nav class="footer__nav">
+            <a href="rent.html">賃貸物件</a><a href="buy.html">売買物件</a>
+            <a href="about.html">会社案内</a><a href="staff.html">スタッフ</a>
+            <a href="owner.html">オーナー様へ</a><a href="voice.html">お客様の声</a><a href="column.html">コラム</a>
+            <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <p><strong>株式会社 Aoki Estate</strong></p>
+          <p>〒167-0043 東京都杉並区上荻1-18-6 AOKIビル 1F</p>
+          <p>TEL: 03-XXXX-XXXX</p>
+          <p>営業時間: 10:00〜19:00（水曜定休）</p>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2025 Aoki Estate Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
