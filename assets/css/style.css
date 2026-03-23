@@ -941,7 +941,7 @@ h1, h2, h3 {
 /* 案1: 白パネル + アクセントライン + ホバー浮上 */
 .feature-card {
   text-align: left;
-  padding: 36px 28px 32px;
+  padding: 48px 32px;
   background: var(--color-surface);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow);
@@ -955,29 +955,29 @@ h1, h2, h3 {
 
 /* 案2: アイコンを円形バッジ化 */
 .feature-card__icon {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 24px;
+  width: 132px;
+  height: 132px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
-  background: rgba(91,127,94,0.08);
+  color: var(--color-accent);
+  background: rgba(160,120,80,0.08);
   border-radius: 50%;
   transition: background var(--transition);
 }
 .feature-card:hover .feature-card__icon {
-  background: rgba(91,127,94,0.14);
+  background: rgba(160,120,80,0.14);
 }
 .feature-card__icon svg {
-  width: 36px;
-  height: 36px;
+  width: 78px;
+  height: 78px;
 }
 
 /* 案4: タイトルサイズアップ + letter-spacing */
 .feature-card__title {
   font-family: var(--font-heading-ja);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-heading);
   margin-bottom: 16px;
@@ -1056,20 +1056,20 @@ h1, h2, h3 {
 .voice-card {
   background: var(--color-surface);
   border-radius: var(--radius-card);
-  padding: 32px 28px;
+  padding: 40px 32px;
   box-shadow: var(--shadow);
   position: relative;
 }
 .voice-card::before {
   content: "\201C";
   position: absolute;
-  top: 16px;
-  left: 20px;
+  top: -10px;
+  left: 16px;
   font-family: var(--font-heading-en);
-  font-size: 56px;
+  font-size: 100px;
   line-height: 1;
-  color: var(--color-primary-light);
-  opacity: 0.35;
+  color: var(--color-accent);
+  opacity: 0.12;
 }
 .voice-card__text {
   font-size: 15px;
@@ -2900,7 +2900,7 @@ h1, h2, h3 {
 .section__label-en {
   font-family: var(--font-heading-en);
   font-weight: 400;
-  font-size: clamp(12px, 1.2vw, 14px);
+  font-size: clamp(13px, 1.5vw, 15px);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -2909,7 +2909,7 @@ h1, h2, h3 {
 }
 .section__title {
   font-family: var(--font-heading-ja);
-  font-size: clamp(22px, 3vw, 32px);
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: 700;
   color: var(--color-heading);
   line-height: 1.35;
@@ -2923,12 +2923,12 @@ h1, h2, h3 {
   left: 0;
   transform: translateY(-50%);
   font-family: var(--font-heading-en);
-  font-size: clamp(60px, 10vw, 120px);
+  font-size: clamp(32px, 5vw, 63px);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-heading);
-  opacity: 0.035;
+  opacity: 0.009;
   white-space: nowrap;
   pointer-events: none;
   line-height: 1;
@@ -2948,7 +2948,7 @@ h1, h2, h3 {
 
 /* --- A3: 特徴カード説明文エイリアス --- */
 .feature-card__desc {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--color-text-light);
   line-height: 1.8;
 }
@@ -3902,14 +3902,24 @@ ul.property-card__spec li + li::before {
    47. Top Page — デザイン強化
    ============================================================ */
 
-/* --- ボイスカードの左辺アクセントライン --- */
+/* --- ボイスカードのトップアクセントライン --- */
 .section--voice .voice-card {
-  border-left: 3px solid var(--color-primary);
+  border-left: none;
+  border-top: 2px solid var(--color-accent);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .section--voice .voice-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
+}
+/* 引用符装飾をテラコッタに変更 */
+.section--voice .voice-card::before {
+  color: var(--color-accent);
+  opacity: 0.12;
+  font-size: 100px;
+  left: 16px;
+  right: auto;
+  top: -10px;
 }
 
 /* --- オーナーバナーの強化 --- */
@@ -3985,7 +3995,7 @@ ul.property-card__spec li + li::before {
 /* ウォーターマークもダーク上で見えるように */
 .section--contact .section__heading::before {
   color: #fff;
-  opacity: 0.04;
+  opacity: 0.01;
 }
 
 /* --- 新着物件セクションのテキストリンク強化 --- */
@@ -4003,13 +4013,24 @@ ul.property-card__spec li + li::before {
 .property-grid--top .property-card:hover {
   border-top-color: var(--color-accent);
 }
+/* --- トップページ物件カード写真・タイトル・価格強化 --- */
+.property-grid--top .property-card__image {
+  aspect-ratio: 5 / 4;
+}
+.property-grid--top .property-card__title {
+  font-size: 17px;
+  font-weight: 700;
+}
+.property-grid--top .property-card__price {
+  color: var(--color-accent-dark);
+}
 
 /* --- 検索バーのビジュアル強化 --- */
 .search-bar {
-  margin-top: -28px;
+  margin-top: -40px;
   border-radius: 12px;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
 .search-bar .container {
   background: var(--color-surface);
@@ -4159,6 +4180,176 @@ ul.property-card__spec li + li::before {
   }
   .voice-item--reverse .voice-item__quote-icon {
     margin-left: auto;
+  }
+}
+
+
+/* ============================================================
+   50. Top Page — 密度強化
+   ============================================================ */
+
+/* --- ⑤ セクション間余白調整（トップページ） --- */
+.section--arrivals,
+.section--strengths,
+.section--area,
+.section--voice {
+  padding: clamp(48px, 6vw, 100px) 0;
+}
+.section--contact {
+  padding: clamp(48px, 6vw, 80px) 0;
+}
+/* バナー余白最適化 */
+.banner {
+  padding: clamp(48px, 5vw, 72px) 0;
+}
+
+
+/* --- ② 数字で見る Aoki Estate --- */
+.numbers {
+  padding: 100px 0;
+  background: var(--color-bg-warm);
+  position: relative;
+}
+.numbers .section__heading {
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+.numbers__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.numbers__item {
+  text-align: center;
+  padding: 0 24px;
+}
+.numbers__value {
+  font-family: var(--font-heading-en);
+  font-size: clamp(48px, 8vw, 72px);
+  font-weight: 700;
+  color: var(--color-accent-dark, #876540);
+  line-height: 1.1;
+  display: block;
+}
+.numbers__divider {
+  width: 40px;
+  height: 2px;
+  background: var(--color-accent);
+  margin: 16px auto;
+}
+.numbers__label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-light);
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .numbers__grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+  }
+}
+
+
+/* --- ① エリアガイド全幅写真帯 --- */
+.section--area-strips {
+  padding: 0;
+  background: none;
+}
+.section--area-strips .section__heading {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: clamp(48px, 6vw, 100px);
+  padding-bottom: 0;
+  margin-bottom: var(--space-lg);
+}
+.area-strip {
+  position: relative;
+  height: clamp(200px, 25vw, 240px);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+/* 2枚目（中野区）を右寄せで交互レイアウト */
+.section--area-strips > .area-strip:nth-child(3) .area-strip__content {
+  text-align: right;
+}
+.area-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(26,26,26,0.4);
+  pointer-events: none;
+}
+.area-strip__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: #fff;
+  width: 100%;
+}
+.area-strip__name {
+  font-family: var(--font-heading-ja);
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+}
+.area-strip__catch {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+.area-strip__link {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  transition: border-color var(--transition);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+.area-strip__link:hover {
+  border-bottom-color: #fff;
+}
+@media (max-width: 767px) {
+  .area-strip {
+    background-attachment: scroll;
+    height: 200px;
+  }
+  .area-strip__content {
+    padding: 0 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .area-strip {
+    background-attachment: scroll;
+  }
+}
+
+
+/* --- ④ お客様の声3列化・星評価 --- */
+.voice-card__stars {
+  color: var(--color-accent);
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .section--voice .voice-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

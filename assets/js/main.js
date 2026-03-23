@@ -698,6 +698,56 @@
   }
 
   /* ============================================================
+     12. Numbers Count-Up Animation
+     ============================================================ */
+  function initCountUp() {
+    const items = $$('.numbers__value[data-count]');
+    if (!items.length) return;
+
+    if (prefersReducedMotion()) {
+      items.forEach((el) => {
+        const target = parseInt(el.dataset.count) || 0;
+        const suffix = el.dataset.suffix || '';
+        el.textContent = target + suffix;
+      });
+      return;
+    }
+
+    function easeOutQuart(t) {
+      return 1 - Math.pow(1 - t, 4);
+    }
+
+    function animateValue(el, target, suffix, duration) {
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.round(easeOutQuart(progress) * target);
+        el.textContent = value + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.count) || 0;
+            const suffix = el.dataset.suffix || '';
+            animateValue(el, target, suffix, 2000);
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    items.forEach((el) => observer.observe(el));
+  }
+
+  /* ============================================================
      Initialize
      ============================================================ */
   document.addEventListener('DOMContentLoaded', () => {
@@ -713,5 +763,6 @@
     initForm();
     initAccordion();
     initSearchShortcut();
+    initCountUp();
   });
 })();
